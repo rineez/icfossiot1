@@ -1,0 +1,3 @@
+
+#Find Diff of device list dev_list_1.txt is output of `ls /dev/` when no external device is connected
+ls /dev/ | diff --suppress-common-lines -y - dev_list_1.txt
